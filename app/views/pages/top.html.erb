@@ -1,0 +1,13 @@
+<header>
+    <h1>🐾 Meo Meo Gallery 🐾</h1>
+    <p>Các chú mèo dễ thương đang chờ bạn!</p>
+  </header>
+
+  <div class="gallery">
+    <% 6.times do |i| %>
+      <div class="card">
+        <img src="https://placekitten.com/400/30<%= i + 1 %>" alt="Cat <%= i + 1 %>">
+        <div class="caption">Chú mèo số <%= i + 1 %></div>
+      </div>
+    <% end %>
+  </div>
