@@ -1,12 +1,12 @@
 class SessionsController < ApplicationController
+  skip_before_action :authenticate!
+
   def new
-    user = User.find_by(id: session[:user_id])
-    redirect_to :root if user.present?
+    redirect_to :root if current_user
   end
 
   def create
-    login = params[:login]    
-    user = User.find_by(email: login) || User.find_by(tel: login)
+    user = User.where("email = :key OR tel = :key", key: params[:account]).first
     is_valid_password = user&.authenticate(params[:password])
 
     if is_valid_password

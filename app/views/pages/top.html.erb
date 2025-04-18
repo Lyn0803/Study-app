@@ -22,9 +22,6 @@
     <a href="#" class="navbar-link desktop-only" title="News">
       <i class="fa fa-globe"></i>
     </a>
-    <a href="#" class="navbar-link desktop-only" title="Account Settings">
-      <i class="fa fa-user"></i>
-    </a>
     <a href="#" class="navbar-link desktop-only" title="Messages">
       <i class="fa fa-envelope"></i>
     </a>
@@ -39,9 +36,7 @@
         <a href="#">Jane likes your post</a>
       </div>
     </div>
-    <a href="#" class="profile-button desktop-only">
-      <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar">
-    </a>
+    <%= button_to "Logout", logout_path, method: :delete, class: "navbar-link desktop-only" %>
   </div>
 </div>
 
