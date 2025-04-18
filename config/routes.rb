@@ -20,5 +20,5 @@ Rails.application.routes.draw do
 
 
 
-  root "home#index"
+  root "pages#top"
 end

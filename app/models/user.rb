@@ -9,5 +9,4 @@ class  User < ApplicationRecord
       
     validates :tel, format: { with: VALID_TEL_REGEX, message: "không hợp lệ" }, allow_blank: true
     validates :tel, uniqueness: true, allow_blank: true
-    
 end
