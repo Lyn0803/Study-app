@@ -1,0 +1,160 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 56px;
+  background-color: #46636F;
+}
+
+
+.navbar a, .dropdown-button {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar a:hover, .dropdown-button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+
+.navbar-dropdown {
+  position: relative;
+}
+
+.badge {
+  background-color: green;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  top: 48px;
+  right: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.profile-button img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: flex;
+  }
+}
+.w3-container  {
+  max-width: 1400px;
+  margin-top: 80px;
+}
+
+.w3-center {
+  .w3-circle {
+    height: 106px;
+    width: 106px;
+
+  }
+}
+.avatar-small{
+  width: 60px;
+  border-radius: 40%;
+}
+.post-container {
+  margin: 16px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.post-images {
+  display: flex;
+  gap: 16px;
+  margin: 0 -16px;
+}
+
+.image-full {
+  width: 100%;
+}
+.image-forest{
+  width: 100%;
+}
+.time-post{
+  float: right;
+  opacity: 0.60;
+}
+.Avartar{
+  width: 50%;
+}
+
+.forest{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.footer{
+  padding: 16px;
+  color: white;
+  width: 100%;
+  background-color: #3D5761;
+  .footer1{
+    color: white;
+    width: 120%;
+    background-color: #2C3E45;
+  }
+}
