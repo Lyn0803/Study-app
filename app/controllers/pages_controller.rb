@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
-    def top
+    # def top
+    # end
+
+    def profile
     end
+
 end

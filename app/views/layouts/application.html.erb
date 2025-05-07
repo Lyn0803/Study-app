@@ -26,7 +26,7 @@
   <body>
   
      <% flash.each do |key, message| %>
-      <div class="flash <%= key %>"><%= message %></div>
+      <div class="flash <%= key %> login-message"><%= message %></div>
     <% end %>
     <%= yield %>
 

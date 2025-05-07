@@ -16,9 +16,8 @@ Rails.application.routes.draw do
   post "login" , to: "sessions#create" 
   delete "logout" , to: "sessions#destroy"
 
-  get 'top', to: 'pages#top'
+  get "profile", to: "pages#profile"
 
 
-
-  root "home#index"
+  root "pages#top"
 end
