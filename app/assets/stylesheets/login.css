@@ -1,4 +1,4 @@
-/* body {
+.login {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #4facfe, #00f2fe);
     display: flex;
@@ -15,44 +15,49 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     width: 320px;
     max-width: 90%;
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 24px;
+    }
   }
   
-  h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 24px;
-  }
+
   
   .form-group {
     margin-bottom: 20px;
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-size: 14px;
+    }
+  }
+ 
+  .form-group{
+     input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
   }
   
-  label {
-    display: block;
-    margin-bottom: 6px;
-    color: #333;
-    font-size: 14px;
-  }
   
-  input[type="login"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-  }
+ 
   
   .remember {
     display: flex;
     align-items: center;
+    .remember input {
+      margin-right: 8px;
+    }
   }
   
-  .remember input[type="checkbox"] {
-    margin-right: 8px;
-  }
   
-  button {
+  
+  .submit {
     width: 100%;
     padding: 12px;
     background-color: #4facfe;
@@ -63,9 +68,21 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
+    
+    .button:hover {
+      background-color: #00c6ff;
+    }
+  }
+
+  .login-message {
+    position: fixed;
+    top: 50px;
+    height: 40px;
+    background: cornsilk;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
   }
   
-  button:hover {
-    background-color: #00c6ff;
-  }
-   */
+  
+  
