@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   post "login" , to: "sessions#create" 
   delete "logout" , to: "sessions#destroy"
 
-  get "profile", to: "pages#profile"
+  get "profile", to: "profile#show"
+  get "edit_profile", to: "profile#edit"
+  post "profile", to: "profile#update"
 
 
   root "pages#top"

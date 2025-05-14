@@ -1,0 +1,41 @@
+<div class="edit-profile">
+  <div class="form-container">
+    <h2>Edit Profile</h2>
+    <%= form_with url: profile_path, method: :post, local: true do |form| %>
+      <%= form.hidden_field :user_id, value: @user.id %>
+      <div class="form-group">
+        <%= form.label :name %>
+        <input value="<%= @user.name %>" class="form-control" type="text" name="name" id="name">
+      </div>
+
+      <div class="form-group">
+        <%= form.label :email %>
+        <%= form.email_field :email, value: @user.email, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :weight %>
+        <%= form.number_field :weight, value: @user.weight, step: 0.1, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :height %>
+        <%= form.number_field :height, value: @user.height, step: 0.1, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :gender %>
+         <%= form.text_field :gender, value: @user.gender, step: 0.1, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :tel, "Telephone" %>, 
+        <%= form.telephone_field :tel, value: @user.tel, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= form.submit "Save Changes", class: 'btn btn-primary' %>
+      </div>
+  <% end %>
+  </div>
+</div>
