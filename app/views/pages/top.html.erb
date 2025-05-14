@@ -64,7 +64,9 @@
          <h4 class="w3-center">My Profile</h4>
          <p class="w3-center"><img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-circle" alt="Avatar"></p>
          <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <%= link_to profile_path do %>
+            <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Profile </p>
+         <% end %>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
          <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
         </div>

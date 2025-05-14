@@ -1,0 +1,22 @@
+<div class="profile-container">
+  <div class="profile-header">
+    <img class="profile-avatar" src="#" alt="Avatar người dùng">
+    <h1 class="profile-name"></h1>
+    <p class="profile-email"></p>
+  </div>
+
+  <div class="profile-details">
+    <h2>Profile info</h2>
+    <ul>
+      <li><strong>Name:</strong> <span class="profile-intro"> <%= @user.name %> </span></li>
+      <li><strong>Age:</strong> <span class="profile-address"><%= @user.age %></span></li>
+      <li><strong>weight:</strong> <span class="profile-phone"><%= @user.weight %>kg</span></li>
+      <li><strong>height:</strong> <span class="profile-joined"><%= @user.height %>cm</span></li>
+      <li><strong>gender:</strong> <span class="profile-joined"><%= @user.gender %></span></li>
+      <li><strong>tel:</strong> <span class="profile-joined"><%= @user.tel %></span></li>
+    </ul>
+  </div>
+  <%= link_to edit_profile_path, class: "edit-button" do %>
+    <span>Edit profile</span>
+  <% end %>
+</div>
